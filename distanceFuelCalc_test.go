@@ -4,10 +4,10 @@ import "testing"
 
 func Test_distanceFuelCalc(t *testing.T) {
 	tests := []struct {
-		name string
+		name               string
 		litersPerHundredKm float64
 		fuelInLiters       float64
-		want int
+		want               int
 	}{
 		{"Distance more 20 km has inaccuracy", 10.0, 100.0, 950},
 		{"Distance less 20 km hasn't inaccuracy", 30.0, 5.0, 16},
